@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://shidongdi.github.io/"/>
-  <updated>2017-03-28T09:15:32.060Z</updated>
+  <updated>2017-03-29T07:10:57.116Z</updated>
   <id>https://shidongdi.github.io/</id>
   
   <author>
@@ -16,13 +16,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>测试markdown</title>
     <link href="https://shidongdi.github.io/2017/03/28/%E6%B5%8B%E8%AF%95markdown/"/>
     <id>https://shidongdi.github.io/2017/03/28/测试markdown/</id>
     <published>2017-03-28T09:22:53.359Z</published>
-    <updated>2017-03-28T09:15:32.060Z</updated>
+    <updated>2017-03-29T07:10:57.116Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><ul>
+    <content type="html"><![CDATA[<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a><font color="#ff00ff">二级标题</font></h2><ul>
 <li>第一</li>
 <li>第二</li>
 </ul>
@@ -33,6 +33,8 @@
 <blockquote>
 <p>引用</p>
 </blockquote>
+<font color="#ff00ff">二级标题</font>
+
 <figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
@@ -42,6 +44,9 @@
             </figure>
 <p><strong>这个是粗体</strong></p>
 <p><em>这个是斜体</em></p>
+<font color="#7CFC00">Welcome to MarkdownPad2</font>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">dfg</div><div class="line">颂德歌功</div></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -75,7 +80,6 @@
 <li>[x] 第二条</li>
 <li>[ ] 第三条</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">graph TB</div><div class="line">    菱形A&#123;开始&#125;--&gt; B</div><div class="line">    B(第二)--&gt; C(2.1)</div><div class="line">    B--&gt; D(2.2)</div></pre></td></tr></table></figure>
 ]]></content>
     
     <summary type="html">
@@ -84,6 +88,14 @@
     
     </summary>
     
+      <category term="分类一级" scheme="https://shidongdi.github.io/categories/%E5%88%86%E7%B1%BB%E4%B8%80%E7%BA%A7/"/>
+    
+      <category term="分类二级" scheme="https://shidongdi.github.io/categories/%E5%88%86%E7%B1%BB%E4%B8%80%E7%BA%A7/%E5%88%86%E7%B1%BB%E4%BA%8C%E7%BA%A7/"/>
+    
+    
+      <category term="Hexo" scheme="https://shidongdi.github.io/tags/Hexo/"/>
+    
+      <category term="Tag2" scheme="https://shidongdi.github.io/tags/Tag2/"/>
     
   </entry>
   
