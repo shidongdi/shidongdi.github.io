@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>Cygwin安装与zsh使用 | Roger&#39;s Blog | 扬帆向前</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="-Linux -工具">
+    <meta name="description" content="1. 安装cygwin   从cygwin官网下载exe安装文件并运行   选择从网上安装  
+      选择安装源，国内可以添加并使用 http://mirrors.163.com/ 镜像地址  
+   
+2. 选择安装packages点击左上角选择Category,点击Base后面的Default，切换为Install，如图
+
+   search里面再搜索添加一些必要的包，如vim、zsh、">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cygwin安装与zsh使用">
+<meta property="og:url" content="https://shidongdi.github.io/2017/04/21/Cygwin安装与zsh使用/index.html">
+<meta property="og:site_name" content="Roger's Blog">
+<meta property="og:description" content="1. 安装cygwin   从cygwin官网下载exe安装文件并运行   选择从网上安装  
+      选择安装源，国内可以添加并使用 http://mirrors.163.com/ 镜像地址  
+   
+2. 选择安装packages点击左上角选择Category,点击Base后面的Default，切换为Install，如图
+
+   search里面再搜索添加一些必要的包，如vim、zsh、">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/483b6ae1gy1feuazfytltj20fd0aot91.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/483b6ae1gy1feub088f8vj20em09xjrl.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/483b6ae1gy1feub4hay5ij209k0a1mx3.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/483b6ae1gy1feub9oakjij20n50a1aa2.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/483b6ae1gy1feubd6gy36j209w08zq31.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/483b6ae1gy1feuby86tdnj20g104qdfx.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/483b6ae1gy1feuc0ub626j20gh0acdgm.jpg">
+<meta property="og:updated_time" content="2017-04-21T07:43:23.781Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Cygwin安装与zsh使用">
+<meta name="twitter:description" content="1. 安装cygwin   从cygwin官网下载exe安装文件并运行   选择从网上安装  
+      选择安装源，国内可以添加并使用 http://mirrors.163.com/ 镜像地址  
+   
+2. 选择安装packages点击左上角选择Category,点击Base后面的Default，切换为Install，如图
+
+   search里面再搜索添加一些必要的包，如vim、zsh、">
+<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/483b6ae1gy1feuazfytltj20fd0aot91.jpg">
+    
+        <link rel="alternative" href="/atom.xml" title="Roger&#39;s Blog" type="application/atom+xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.5.0">
+    <script>window.lazyScripts=[]</script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Roger</h5>
+          <a href="mailto:shidongdi@sina.com" title="shidongdi@sina.com" class="mail">shidongdi@sina.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/shidongdi" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://www.weibo.com/" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                测试
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Cygwin安装与zsh使用</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Cygwin安装与zsh使用</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-04-21T07:43:45.909Z" itemprop="datePublished" class="page-time">
+  2017-04-21
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/笔记/">-笔记</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-安装cygwin"><span class="post-toc-number">1.</span> <span class="post-toc-text">1. 安装cygwin</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-选择安装packages"><span class="post-toc-number">2.</span> <span class="post-toc-text">2. 选择安装packages</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-安装oh-my-zsh"><span class="post-toc-number">3.</span> <span class="post-toc-text">3. 安装oh-my-zsh</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4-切换用户shell"><span class="post-toc-number">4.</span> <span class="post-toc-text">4. 切换用户shell</span></a></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-Cygwin安装与zsh使用"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Cygwin安装与zsh使用</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017年04月21日 16:43" datetime="2017-04-21T07:43:45.909Z"  itemprop="datePublished">2017-04-21</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/笔记/">-笔记</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h3 id="1-安装cygwin"><a href="#1-安装cygwin" class="headerlink" title="1. 安装cygwin"></a>1. 安装cygwin</h3><p>   从<a href="https://cygwin.com/install.html" target="_blank" rel="external">cygwin官网</a>下载exe安装文件并运行<br>   选择从网上安装  </p>
+<p>   <img src="http://ww1.sinaimg.cn/large/483b6ae1gy1feuazfytltj20fd0aot91.jpg" alt="image"><br>   选择安装源，国内可以添加并使用 <a href="http://mirrors.163.com/" target="_blank" rel="external">http://mirrors.163.com/</a> 镜像地址  </p>
+<p>   <img src="http://ww1.sinaimg.cn/large/483b6ae1gy1feub088f8vj20em09xjrl.jpg" alt="image"></p>
+<h3 id="2-选择安装packages"><a href="#2-选择安装packages" class="headerlink" title="2. 选择安装packages"></a>2. 选择安装packages</h3><pre><code>点击左上角选择Category,点击Base后面的Default，切换为Install，如图
+</code></pre><p><img src="http://ww1.sinaimg.cn/large/483b6ae1gy1feub4hay5ij209k0a1mx3.jpg" alt="image"></p>
+<p>   search里面再搜索添加一些必要的包，如vim、zsh、curl（选择Net下的）</p>
+<p><img src="http://ww1.sinaimg.cn/large/483b6ae1gy1feub9oakjij20n50a1aa2.jpg" alt="image"></p>
+<h3 id="3-安装oh-my-zsh"><a href="#3-安装oh-my-zsh" class="headerlink" title="3. 安装oh-my-zsh"></a>3. 安装<a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="external">oh-my-zsh</a></h3><p>   通过查看/etc/shells下可以看到有很多种shell</p>
+<p> <img src="http://ww1.sinaimg.cn/large/483b6ae1gy1feubd6gy36j209w08zq31.jpg" alt="image"></p>
+<p>   zsh就是一种shell。他提供了更多更强大的功能和丰富的主题<br>   在cygwin里可以通过以下命令来安装zsh  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh</div></pre></td></tr></table></figure>
+<h3 id="4-切换用户shell"><a href="#4-切换用户shell" class="headerlink" title="4. 切换用户shell"></a>4. 切换用户shell</h3><pre><code>cygwin默认没有生成用户系统配置文件，可以通过以下命令生成  
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mkpasswd -l &gt; /etc/passwd</div></pre></td></tr></table></figure>
+<p>用vim打开/etc/passwd文件，修改你的用户后面的bash为zsh，如下</p>
+<pre><code>![image](http://ww1.sinaimg.cn/large/483b6ae1gy1feubsulchcj20gc0amq3m.jpg)
+</code></pre><p>重启cygwin，至此你的cygwin和zsh都已经完成配置<br>接下来可以改个主题玩玩。</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://ww1.sinaimg.cn/large/483b6ae1gy1feuby86tdnj20g104qdfx.jpg" alt="image" title="">
+                </div>
+                <div class="image-caption">image</div>
+            </figure>
+<p>zsh主题都在.oh-my-zsh/themes里，配置文件在.zshrc底下<br>通过修改.zshrc里的ZSH_THEME可以修改成你喜欢的主题，主题名可以在上面的themes里面找，也可以写random随机主题T-T</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://ww1.sinaimg.cn/large/483b6ae1gy1feuc0ub626j20gh0acdgm.jpg" alt="image" title="">
+                </div>
+                <div class="image-caption">image</div>
+            </figure>
+<p>重启Cygwin后就能看到不一样的效果了。</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-04-21T07:43:23.781Z" itemprop="dateUpdated">2017年4月21日 16:43</time>
+</span><br>
+
+
+        转载请注明出处：<a href="/2017/04/21/Cygwin安装与zsh使用/" target="_blank" rel="external">https://shidongdi.github.io/2017/04/21/Cygwin安装与zsh使用/</a>
+    </div>
+    <footer>
+        <a href="https://shidongdi.github.io">
+            <img src="/img/avatar.jpg" alt="Roger">
+            Roger
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux-工具/">-Linux -工具</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://shidongdi.github.io/2017/04/21/Cygwin安装与zsh使用/&title=《Cygwin安装与zsh使用》 — Roger's Blog&pic=https://shidongdi.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://shidongdi.github.io/2017/04/21/Cygwin安装与zsh使用/&title=《Cygwin安装与zsh使用》 — Roger's Blog&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://shidongdi.github.io/2017/04/21/Cygwin安装与zsh使用/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Cygwin安装与zsh使用》 — Roger's Blog&url=https://shidongdi.github.io/2017/04/21/Cygwin安装与zsh使用/&via=https://shidongdi.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://shidongdi.github.io/2017/04/21/Cygwin安装与zsh使用/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+
+
+    
+
+
+
+
+
+
+
+<section class="comments" id="comments">
+    <!-- UY BEGIN -->
+    <div id="uyan_frame"></div>
+    <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2129144"></script>
+    <!-- UY END -->
+</section>
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            <span>博客内容遵循 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p>
+            <span>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></span>
+            <span>Roger's Blog &copy; 2015 - 2017</span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://shidongdi.github.io/2017/04/21/Cygwin安装与zsh使用/&title=《Cygwin安装与zsh使用》 — Roger's Blog&pic=https://shidongdi.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://shidongdi.github.io/2017/04/21/Cygwin安装与zsh使用/&title=《Cygwin安装与zsh使用》 — Roger's Blog&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://shidongdi.github.io/2017/04/21/Cygwin安装与zsh使用/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Cygwin安装与zsh使用》 — Roger's Blog&url=https://shidongdi.github.io/2017/04/21/Cygwin安装与zsh使用/&via=https://shidongdi.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://shidongdi.github.io/2017/04/21/Cygwin安装与zsh使用/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACuklEQVR42u3ay27CQAwFUP7/p6nUVaUIuLbHNIuTFQqPzkmljHPtxyM+nr/H9czf89cz789f373+WvILBw48PDy81tJfHfkikkW//9arzyTreXkJ8PDw8NZ4+R9IPj8BJ1tOYQ14eHh4/8p7v+i8mk3enawHDw8P756896FDfnPPC248PDy8u/GSxeUxbh7L5uHvetaCh4eHF/OqDbA7vF7s7+Hh4eENuuq94jgvnfN4t3fg4eHhbfB6YwGnmme9S5nsAuWpLjw8PLwiLylkq+386tBVHu82hxjw8PDwDvEmLahqhLE3nvXyW3h4eHgLvPnXcnC1+E5+ofAwgIeHh3eUVy1882bVqYGqHFZIKfDw8PDGvGRLKCccxaWfbZXh4eHhbfDyG3354T9Yet7cyj+Ph4eHt83rPeRXl1WNJ/IiPtpa8PDw8L7Cmz/X50MA1S3kwMaAh4eHN+A9i0evmE6iiiogeo2Hh4e3xjsVDfReTwLiD5sKHh4e3gIvj27zdn6vmK6OeRUCaDw8PLwFXm+YqTpWtTcHVdje8PDw8A7xvtnuSraE3gX9MFOGh4eHd5RXva3nG0MPsLEqPDw8vLOrqm4M1SI4eTePQpILGj0l4OHh4bV4SWCaL2Ie6U5abuVkBQ8PD6/F68Ws+e2+1zybn4n+q3h4eHgtXn5rzltQk2L9VCiMh4eH9x1etbF0NqLtbUUfNjM8PDy8BV6vPZ8vaxLL9kKKQvqCh4eH1+I9i0c+HNAroPM4OLrQeHh4eAu8Xs/oVEHc22yqgTIeHh7eBq83ODUZR6j+Tv7daKYMDw8P7xAvHyBICtxJJHFgrAoPDw/vNrx5yZtHxtXRhAMbAx4eHt4ar/pu7zPzcS48PDy8bV41jOi1/3s3+tHFxcPDw1vg9Z7o84I4jzmqIXKzm4eHh4fX5/0AzifkKRs6ZMAAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@1.5.0/source/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@1.5.0/source/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+</body>
+</html>

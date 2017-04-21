@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://shidongdi.github.io/"/>
-  <updated>2017-03-29T07:10:57.116Z</updated>
+  <updated>2017-04-21T07:43:23.781Z</updated>
   <id>https://shidongdi.github.io/</id>
   
   <author>
@@ -16,113 +16,56 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>测试markdown</title>
-    <link href="https://shidongdi.github.io/2017/03/28/%E6%B5%8B%E8%AF%95markdown/"/>
-    <id>https://shidongdi.github.io/2017/03/28/测试markdown/</id>
-    <published>2017-03-28T09:22:53.359Z</published>
-    <updated>2017-03-29T07:10:57.116Z</updated>
+    <title>Cygwin安装与zsh使用</title>
+    <link href="https://shidongdi.github.io/2017/04/21/Cygwin%E5%AE%89%E8%A3%85%E4%B8%8Ezsh%E4%BD%BF%E7%94%A8/"/>
+    <id>https://shidongdi.github.io/2017/04/21/Cygwin安装与zsh使用/</id>
+    <published>2017-04-21T07:43:45.909Z</published>
+    <updated>2017-04-21T07:43:23.781Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a><font color="#ff00ff">二级标题</font></h2><ul>
-<li>第一</li>
-<li>第二</li>
-</ul>
-<ol>
-<li>地方</li>
-<li>第二地方</li>
-</ol>
-<blockquote>
-<p>引用</p>
-</blockquote>
-<font color="#ff00ff">二级标题</font>
-
+    <content type="html"><![CDATA[<h3 id="1-安装cygwin"><a href="#1-安装cygwin" class="headerlink" title="1. 安装cygwin"></a>1. 安装cygwin</h3><p>   从<a href="https://cygwin.com/install.html" target="_blank" rel="external">cygwin官网</a>下载exe安装文件并运行<br>   选择从网上安装  </p>
+<p>   <img src="http://ww1.sinaimg.cn/large/483b6ae1gy1feuazfytltj20fd0aot91.jpg" alt="image"><br>   选择安装源，国内可以添加并使用 <a href="http://mirrors.163.com/" target="_blank" rel="external">http://mirrors.163.com/</a> 镜像地址  </p>
+<p>   <img src="http://ww1.sinaimg.cn/large/483b6ae1gy1feub088f8vj20em09xjrl.jpg" alt="image"></p>
+<h3 id="2-选择安装packages"><a href="#2-选择安装packages" class="headerlink" title="2. 选择安装packages"></a>2. 选择安装packages</h3><pre><code>点击左上角选择Category,点击Base后面的Default，切换为Install，如图
+</code></pre><p><img src="http://ww1.sinaimg.cn/large/483b6ae1gy1feub4hay5ij209k0a1mx3.jpg" alt="image"></p>
+<p>   search里面再搜索添加一些必要的包，如vim、zsh、curl（选择Net下的）</p>
+<p><img src="http://ww1.sinaimg.cn/large/483b6ae1gy1feub9oakjij20n50a1aa2.jpg" alt="image"></p>
+<h3 id="3-安装oh-my-zsh"><a href="#3-安装oh-my-zsh" class="headerlink" title="3. 安装oh-my-zsh"></a>3. 安装<a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="external">oh-my-zsh</a></h3><p>   通过查看/etc/shells下可以看到有很多种shell</p>
+<p> <img src="http://ww1.sinaimg.cn/large/483b6ae1gy1feubd6gy36j209w08zq31.jpg" alt="image"></p>
+<p>   zsh就是一种shell。他提供了更多更强大的功能和丰富的主题<br>   在cygwin里可以通过以下命令来安装zsh  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh</div></pre></td></tr></table></figure>
+<h3 id="4-切换用户shell"><a href="#4-切换用户shell" class="headerlink" title="4. 切换用户shell"></a>4. 切换用户shell</h3><pre><code>cygwin默认没有生成用户系统配置文件，可以通过以下命令生成  
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mkpasswd -l &gt; /etc/passwd</div></pre></td></tr></table></figure>
+<p>用vim打开/etc/passwd文件，修改你的用户后面的bash为zsh，如下</p>
+<pre><code>![image](http://ww1.sinaimg.cn/large/483b6ae1gy1feubsulchcj20gc0amq3m.jpg)
+</code></pre><p>重启cygwin，至此你的cygwin和zsh都已经完成配置<br>接下来可以改个主题玩玩。</p>
 <figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="http://ww1.sinaimg.cn/large/483b6ae1gy1fe2n88k0foj20a008wgm8.jpg" alt="" title="">
+                    <img src="http://ww1.sinaimg.cn/large/483b6ae1gy1feuby86tdnj20g104qdfx.jpg" alt="image" title="">
                 </div>
-                <div class="image-caption"></div>
+                <div class="image-caption">image</div>
             </figure>
-<p><strong>这个是粗体</strong></p>
-<p><em>这个是斜体</em></p>
-<font color="#7CFC00">Welcome to MarkdownPad2</font>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">dfg</div><div class="line">颂德歌功</div></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th>Tables</th>
-<th style="text-align:center">Are</th>
-<th style="text-align:right">Cool</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>col 3 is</td>
-<td style="text-align:center">right-aligned</td>
-<td style="text-align:right">$1600</td>
-</tr>
-<tr>
-<td>col 2 is</td>
-<td style="text-align:center">centered</td>
-<td style="text-align:right">$12</td>
-</tr>
-<tr>
-<td>zebra stripes</td>
-<td style="text-align:center">are neat</td>
-<td style="text-align:right">$1</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">killSelfButton.setOnClickListener(new View.OnClickListener() &#123;</div><div class="line">            @Override</div><div class="line">            public void onClick(View v) &#123;</div><div class="line">                ShareTinkerInternals.killAllOtherProcess(getApplicationContext());</div><div class="line">                android.os.Process.killProcess(android.os.Process.myPid());</div><div class="line">            &#125;</div><div class="line">        &#125;);</div></pre></td></tr></table></figure>
-<h3 id="今日待办"><a href="#今日待办" class="headerlink" title="今日待办"></a>今日待办</h3><ul>
-<li>[x] 第一条</li>
-<li>[x] 第二条</li>
-<li>[ ] 第三条</li>
-</ul>
+<p>zsh主题都在.oh-my-zsh/themes里，配置文件在.zshrc底下<br>通过修改.zshrc里的ZSH_THEME可以修改成你喜欢的主题，主题名可以在上面的themes里面找，也可以写random随机主题T-T</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://ww1.sinaimg.cn/large/483b6ae1gy1feuc0ub626j20gh0acdgm.jpg" alt="image" title="">
+                </div>
+                <div class="image-caption">image</div>
+            </figure>
+<p>重启Cygwin后就能看到不一样的效果了。</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;一级标题&quot;&gt;&lt;a href=&quot;#一级标题&quot; class=&quot;headerlink&quot; title=&quot;一级标题&quot;&gt;&lt;/a&gt;一级标题&lt;/h1&gt;&lt;h2 id=&quot;二级标题&quot;&gt;&lt;a href=&quot;#二级标题&quot; class=&quot;headerlink&quot; title=&quot;二级标题&quot;&gt;&lt;/a
+      &lt;h3 id=&quot;1-安装cygwin&quot;&gt;&lt;a href=&quot;#1-安装cygwin&quot; class=&quot;headerlink&quot; title=&quot;1. 安装cygwin&quot;&gt;&lt;/a&gt;1. 安装cygwin&lt;/h3&gt;&lt;p&gt;   从&lt;a href=&quot;https://cygwin.com/inst
     
     </summary>
     
-      <category term="分类一级" scheme="https://shidongdi.github.io/categories/%E5%88%86%E7%B1%BB%E4%B8%80%E7%BA%A7/"/>
-    
-      <category term="分类二级" scheme="https://shidongdi.github.io/categories/%E5%88%86%E7%B1%BB%E4%B8%80%E7%BA%A7/%E5%88%86%E7%B1%BB%E4%BA%8C%E7%BA%A7/"/>
+      <category term="-笔记" scheme="https://shidongdi.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="Hexo" scheme="https://shidongdi.github.io/tags/Hexo/"/>
-    
-      <category term="Tag2" scheme="https://shidongdi.github.io/tags/Tag2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://shidongdi.github.io/2017/03/28/hello-world/"/>
-    <id>https://shidongdi.github.io/2017/03/28/hello-world/</id>
-    <published>2017-03-28T03:14:00.643Z</published>
-    <updated>2017-03-28T03:14:00.648Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-    
-    </summary>
-    
+      <category term="-Linux -工具" scheme="https://shidongdi.github.io/tags/Linux-%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
