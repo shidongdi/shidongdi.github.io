@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://shidongdi.github.io/"/>
-  <updated>2017-04-21T07:43:23.781Z</updated>
+  <updated>2017-04-25T06:53:07.583Z</updated>
   <id>https://shidongdi.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://shidongdi.github.io/2017/04/21/Cygwin%E5%AE%89%E8%A3%85%E4%B8%8Ezsh%E4%BD%BF%E7%94%A8/"/>
     <id>https://shidongdi.github.io/2017/04/21/Cygwin安装与zsh使用/</id>
     <published>2017-04-21T07:43:45.909Z</published>
-    <updated>2017-04-21T07:43:23.781Z</updated>
+    <updated>2017-04-25T06:53:07.583Z</updated>
     
     <content type="html"><![CDATA[<h3 id="1-安装cygwin"><a href="#1-安装cygwin" class="headerlink" title="1. 安装cygwin"></a>1. 安装cygwin</h3><p>   从<a href="https://cygwin.com/install.html" target="_blank" rel="external">cygwin官网</a>下载exe安装文件并运行<br>   选择从网上安装  </p>
 <p>   <img src="http://ww1.sinaimg.cn/large/483b6ae1gy1feuazfytltj20fd0aot91.jpg" alt="image"><br>   选择安装源，国内可以添加并使用 <a href="http://mirrors.163.com/" target="_blank" rel="external">http://mirrors.163.com/</a> 镜像地址  </p>
@@ -62,10 +62,12 @@
     
     </summary>
     
-      <category term="-笔记" scheme="https://shidongdi.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://shidongdi.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="-Linux -工具" scheme="https://shidongdi.github.io/tags/Linux-%E5%B7%A5%E5%85%B7/"/>
+      <category term="Linux" scheme="https://shidongdi.github.io/tags/Linux/"/>
+    
+      <category term="工具" scheme="https://shidongdi.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
